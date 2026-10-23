@@ -1,0 +1,8 @@
+name = "brief"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+workers_dev = true
+
+[vars]
+CHAT_ID = "448345782"
+ALLOWED_ORIGINS = "https://kateriis.github.io"
