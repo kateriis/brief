@@ -47,7 +47,7 @@
 .kk-opt--radio.is-checked .kk-opt__mark::after { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--on-accent); }
 
 /* Плашка «важливо» */
-.kk-badge { display: inline-block; font: 500 11px/1 var(--font-tight); letter-spacing: .06em; text-transform: uppercase;
+.kk-badge { display: inline-block; font: 500 11px/1 var(--font-tight); letter-spacing: -.03em; text-transform: uppercase;
   background: var(--accent); color: var(--on-accent); padding: 6px 9px; border-radius: var(--radius-pill); }
 
 /* Фото: строга і тепла обробка */
@@ -57,5 +57,5 @@
 .kk-photo--strict img { filter: grayscale(1) contrast(1.1) brightness(1.02); transform: scale(1.4); transform-origin: 66% 48%; object-position: 66% 45%; }
 .kk-photo--warm img { object-position: 60% 45%; }
 .kk-photo__cap { display: flex; justify-content: space-between; gap: var(--space-3); padding-top: var(--space-3); border-top: 1px solid var(--line); }
-.kk-photo__name { font: 500 13px/1.2 var(--font-tight); letter-spacing: .06em; text-transform: uppercase; }
-.kk-photo__role { font-size: 14px; color: var(--ink-50); }
+.kk-photo__name { font: 500 13px/1.2 var(--font-tight); letter-spacing: -.03em; text-transform: uppercase; }
+.kk-photo__role { font-size: 14px; letter-spacing: -.03em; color: var(--ink-50); }

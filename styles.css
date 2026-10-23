@@ -163,14 +163,14 @@ a { color: inherit; }
   display: flex; align-items: center; justify-content: space-between; gap: 16px;
 }
 .topbar__brand {
-  font: 500 13px/1 var(--tight); text-transform: uppercase; letter-spacing: 0.04em;
+  font: 500 13px/1 var(--tight); text-transform: uppercase; letter-spacing: -0.03em;
   display: inline-flex; align-items: center; gap: 8px; white-space: nowrap;
 }
 .topbar__sep { width: 1px; height: 18px; background: var(--line); margin: 0 4px; }
 .logo { display: block; height: 20px; width: auto; }
 .logo--footer { height: 32px; margin-bottom: 14px; }
 .topbar__count {
-  font: 500 13px/1 var(--tight); letter-spacing: 0.04em;
+  font: 500 13px/1 var(--tight); letter-spacing: -0.03em;
   font-variant-numeric: tabular-nums;
 }
 .topbar__count b { font-weight: 500; }
@@ -220,7 +220,7 @@ a { color: inherit; }
 }
 
 .eyebrow {
-  font: 500 13px/1 var(--tight); text-transform: uppercase; letter-spacing: 0.06em;
+  font: 500 13px/1 var(--tight); text-transform: uppercase; letter-spacing: -0.03em;
   color: var(--ink-50);
 }
 
@@ -247,8 +247,8 @@ a { color: inherit; }
   display: flex; justify-content: space-between; align-items: baseline; gap: 12px;
   margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--line);
 }
-.intro__name { font: 500 13px/1.2 var(--tight); text-transform: uppercase; letter-spacing: 0.06em; }
-.intro__role { font-size: 14px; color: var(--ink-50); text-align: right; }
+.intro__name { font: 500 13px/1.2 var(--tight); text-transform: uppercase; letter-spacing: -0.03em; }
+.intro__role { font-size: 14px; letter-spacing: -0.03em; color: var(--ink-50); text-align: right; }
 .intro__title {
   margin-top: 16px;
   /* розмір від найдовшого слова «РОЗКАЖІТЬ» (≈5,8 em) */
@@ -272,7 +272,7 @@ a { color: inherit; }
 .stage__aside { padding: 28px 0 24px; }
 .stage__count {
   display: flex; align-items: baseline; gap: 6px;
-  font: 500 13px/1 var(--tight); letter-spacing: 0.04em; font-variant-numeric: tabular-nums;
+  font: 500 13px/1 var(--tight); letter-spacing: -0.03em; font-variant-numeric: tabular-nums;
 }
 .stage__total { color: var(--ink-50); }
 .stage__title {
@@ -306,7 +306,7 @@ a { color: inherit; }
 
 .badge {
   flex: none; margin-top: 2px;
-  font: 500 11px/1 var(--tight); text-transform: uppercase; letter-spacing: 0.06em;
+  font: 500 11px/1 var(--tight); text-transform: uppercase; letter-spacing: -0.03em;
   background: var(--accent); color: #fff;
   padding: 6px 9px; border-radius: 999px;
 }
@@ -457,7 +457,7 @@ a { color: inherit; }
 .final__photo.is-empty .final__ph { display: grid; }
 .final__tag {
   position: absolute; left: 16px; bottom: 16px;
-  font: 500 12px/1 var(--tight); text-transform: uppercase; letter-spacing: 0.06em;
+  font: 500 12px/1 var(--tight); text-transform: uppercase; letter-spacing: -0.03em;
   background: rgba(255, 255, 255, 0.92); color: var(--ink);
   padding: 8px 12px; border-radius: 999px;
 }
@@ -475,7 +475,7 @@ a { color: inherit; }
 }
 .final__sub {
   margin-top: 40px;
-  font: 500 13px/1 var(--tight); text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-50);
+  font: 500 13px/1 var(--tight); text-transform: uppercase; letter-spacing: -0.03em; color: var(--ink-50);
 }
 .next-steps { margin-top: 14px; border-top: 1px solid var(--line); counter-reset: step; max-width: 560px; }
 .next-steps li {
@@ -491,7 +491,7 @@ a { color: inherit; }
 /* ---------- Підвал ---------- */
 .footer { border-top: 1px solid var(--line); padding: 32px 0 40px; font-size: 14px; }
 .footer__inner { display: grid; gap: 24px; }
-.footer__brand { font: 500 13px/1.3 var(--tight); text-transform: uppercase; letter-spacing: 0.04em; }
+.footer__brand { font: 500 13px/1.3 var(--tight); text-transform: uppercase; letter-spacing: -0.03em; }
 .footer__muted { margin-top: 8px; color: var(--ink-50); line-height: 1.5; }
 .footer__links { display: grid; gap: 8px; }
 .footer__links a { color: var(--ink-70); text-decoration: none; transition: color .2s; }
@@ -648,7 +648,7 @@ a { color: inherit; }
     container-type: inline-size;
   }
   .stage__count { font: 700 104px/var(--display-lh) var(--display); letter-spacing: var(--display-ls); gap: 10px; }
-  .stage__total { font: 500 14px/1 var(--tight); letter-spacing: 0.04em; }
+  .stage__total { font: 500 14px/1 var(--tight); letter-spacing: -0.03em; }
   /* розмір від ширини лівої колонки, щоб довгі назви не вилазили */
   .stage__title { margin-top: 28px; font-size: 40px; font-size: min(13.5cqi, 72px); }
   .stage__desc { margin-top: 20px; font-size: 17px; }
@@ -666,7 +666,7 @@ a { color: inherit; }
   .toc__item {
     width: 100%; display: flex; align-items: baseline; gap: 14px;
     padding: 7px 0; border: 0; border-bottom: 1px solid var(--line); background: none;
-    font: 400 14px/1.3 var(--tight); color: var(--ink-50); text-align: left; cursor: pointer;
+    font: 400 14px/1.3 var(--tight); letter-spacing: -0.03em; color: var(--ink-50); text-align: left; cursor: pointer;
     transition: color .2s var(--ease);
   }
   .toc__item:hover { color: var(--ink); }
