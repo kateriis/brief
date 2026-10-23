@@ -1,0 +1,1 @@
+Монограма «КК»: дві літери Inter Bold із трекінгом −5%, у контурах. `kk-mark-black.svg` — чорна (#000000) для `bg` і `surface`; `kk-mark-white.svg` — біла (#ffffff) для `accent`, `ink` і фото. Висота в шапці 20px, у підвалі 32px, не менше 16px.

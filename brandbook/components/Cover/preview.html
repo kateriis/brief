@@ -1,0 +1,47 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<title>Катерина Качур</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap">
+<style>
+  html, body { margin:0; height:100%; }
+  body { background:var(--bg); color:var(--ink); font-family:var(--font-sans); overflow:hidden; }
+  .cover { position:relative; height:288px; overflow:hidden; }
+  .art { position:absolute; top:0; left:480px; width:480px; height:288px; overflow:hidden; }
+  .art svg { display:block; width:480px; height:288px; }
+  .brand { fill:var(--accent); }
+  .deep { fill:var(--ink); }
+  .paper { fill:var(--surface); }
+  .glyph { fill:var(--on-accent); font-family:var(--font-display); font-weight:700; letter-spacing:-0.05em; }
+  .blk { rx:var(--radius-lg); }
+  .words { position:absolute; left:var(--space-8); bottom:var(--space-8); max-width:440px; }
+  .name { margin:0; font-family:var(--font-display); font-weight:700; font-size:88px; line-height:.95; letter-spacing:-0.05em; color:var(--ink); }
+  .tag { margin:var(--space-3) 0 0 2px; font-size:14px; line-height:20px; font-weight:500; letter-spacing:-0.02em; color:var(--ink-70); }
+</style>
+</head>
+<body>
+<div class="cover">
+<div class="art" aria-hidden="true">
+<svg viewBox="0 0 480 288" width="480" height="288">
+<!--
+  blocks      accent 200×280 bled off the top (identity colour, largest) · ink 120×168 · surface 120×224 bleeding off the right edge — ≈35% of 960×288
+  arrangement one tall accent slab with satellites, bottoms on one line space-6 above the edge, space-4 gutters
+  pattern     one oversized numeral: the stage number «02» in Inter Bold −5%, the brand's own device (numbered stages), white, clipped by the accent slab
+  scales      gutters space-4; bottom inset space-6; corners radius-lg on every block
+-->
+<defs><clipPath id="slab"><rect x="24" y="-16" width="200" height="280" rx="16"/></clipPath></defs>
+<rect class="brand blk" x="24" y="-16" width="200" height="280" rx="16"/>
+<text class="glyph" x="22" y="262" font-size="196" clip-path="url(#slab)">02</text>
+<rect class="deep blk" x="240" y="96" width="120" height="168" rx="16"/>
+<rect class="paper blk" x="376" y="40" width="120" height="224" rx="16"/>
+</svg>
+</div>
+<div class="words">
+  <h1 class="name">Катерина<br>Качур</h1>
+  <p class="tag">Дизайн і розробка сайтів для експертів і особистих брендів</p>
+</div>
+</div>
+</body>
+</html>

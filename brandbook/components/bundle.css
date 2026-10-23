@@ -1,0 +1,61 @@
+/* Компоненти бренду Катерини Качур — ті самі правила, що на сайті брифу */
+.kk-root { font-family: var(--font-sans); color: var(--ink); background: var(--bg); -webkit-font-smoothing: antialiased; }
+.kk-row { display: flex; flex-wrap: wrap; gap: var(--space-3); align-items: center; padding: var(--space-6); }
+.kk-stack { display: grid; gap: var(--space-6); padding: var(--space-6); max-width: 560px; }
+
+/* Кнопка: підпис + квадрат зі стрілкою */
+.kk-btn { display: inline-flex; gap: 2px; padding: 0; border: 0; background: none; cursor: pointer;
+  font: 500 15px/1 var(--font-tight); letter-spacing: .02em; text-transform: uppercase; color: var(--on-accent); }
+.kk-btn__label, .kk-btn__arrow { background: var(--ink); border-radius: var(--radius-md); min-height: var(--button-h);
+  display: flex; align-items: center; justify-content: center; transition: background-color .25s cubic-bezier(.2,.7,.2,1); }
+.kk-btn__label { padding: 0 20px; white-space: nowrap; }
+.kk-btn__arrow { width: var(--button-h); }
+.kk-btn__arrow svg { transition: transform .3s cubic-bezier(.2,.7,.2,1); }
+.kk-btn:hover .kk-btn__arrow svg { transform: translateX(3px); }
+.kk-btn--ghost { color: var(--ink); }
+.kk-btn--ghost .kk-btn__label, .kk-btn--ghost .kk-btn__arrow { background: var(--surface); }
+.kk-btn--ghost:hover .kk-btn__label, .kk-btn--ghost:hover .kk-btn__arrow { background: var(--surface-2); }
+.kk-btn:focus-visible { outline: none; }
+.kk-btn:focus-visible .kk-btn__label { outline: 2px solid var(--ink); outline-offset: 3px; }
+
+/* Питання і поле */
+.kk-q { display: grid; gap: 10px; }
+.kk-q__head { display: flex; justify-content: space-between; gap: var(--space-3); align-items: flex-start; }
+.kk-q__label { font: 500 18px/1.35 var(--font-tight); letter-spacing: -.01em; }
+.kk-q__req { color: var(--ink-50); }
+.kk-q__hint { margin: -4px 0 0; font: 500 16px/1.2 var(--font-sans); letter-spacing: -.05em; color: var(--ink-50); }
+.kk-field { display: block; width: 100%; box-sizing: border-box; font: 400 17px/1.5 var(--font-sans); color: var(--ink);
+  background: var(--surface); border: 1px solid transparent; border-radius: var(--radius-md); padding: 14px var(--space-4);
+  resize: none; min-height: 54px; }
+.kk-field::placeholder { color: var(--ink-50); }
+.kk-field:focus, .kk-field.is-focus { outline: none; border-color: var(--ink); }
+.kk-q--error .kk-field { border-color: var(--error); background: var(--error-bg); }
+.kk-q__error { margin: 0; font-size: 14px; color: var(--error); }
+
+/* Варіант відповіді */
+.kk-opts { display: grid; gap: var(--space-2); grid-template-columns: 1fr 1fr; }
+.kk-opt { display: flex; gap: var(--space-3); align-items: flex-start; padding: 14px var(--space-4); background: var(--surface);
+  border: 1px solid transparent; border-radius: var(--radius-md); font-size: 16px; line-height: 1.45; cursor: pointer; }
+.kk-opt:hover { background: var(--surface-2); }
+.kk-opt__mark { flex: none; width: 20px; height: 20px; margin-top: 1px; box-sizing: border-box; border: 1.5px solid var(--ink-50);
+  border-radius: var(--radius-sm); background: var(--surface); display: grid; place-items: center; }
+.kk-opt--radio .kk-opt__mark { border-radius: 50%; }
+.kk-opt.is-checked { border-color: var(--ink); background: var(--surface); }
+.kk-opt.is-checked .kk-opt__mark { background: var(--ink); border-color: var(--ink); }
+.kk-opt--checkbox.is-checked .kk-opt__mark::after { content: ""; width: 10px; height: 6px; margin-top: -2px;
+  border-left: 2px solid var(--on-accent); border-bottom: 2px solid var(--on-accent); transform: rotate(-45deg); }
+.kk-opt--radio.is-checked .kk-opt__mark::after { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--on-accent); }
+
+/* Плашка «важливо» */
+.kk-badge { display: inline-block; font: 500 11px/1 var(--font-tight); letter-spacing: .06em; text-transform: uppercase;
+  background: var(--accent); color: var(--on-accent); padding: 6px 9px; border-radius: var(--radius-pill); }
+
+/* Фото: строга і тепла обробка */
+.kk-photo { margin: 0; display: grid; gap: var(--space-3); }
+.kk-photo__frame { overflow: hidden; border-radius: var(--radius-lg); aspect-ratio: 4 / 5; background: var(--accent); }
+.kk-photo__frame img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.kk-photo--strict img { filter: grayscale(1) contrast(1.1) brightness(1.02); transform: scale(1.4); transform-origin: 66% 48%; object-position: 66% 45%; }
+.kk-photo--warm img { object-position: 60% 45%; }
+.kk-photo__cap { display: flex; justify-content: space-between; gap: var(--space-3); padding-top: var(--space-3); border-top: 1px solid var(--line); }
+.kk-photo__name { font: 500 13px/1.2 var(--font-tight); letter-spacing: .06em; text-transform: uppercase; }
+.kk-photo__role { font-size: 14px; color: var(--ink-50); }
