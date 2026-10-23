@@ -86,7 +86,7 @@
   --ink-70: rgba(0, 0, 0, 0.7);
   --ink-50: rgba(0, 0, 0, 0.6);   /* 5,7:1 на білому — норма для дрібного тексту */
   --line: rgba(0, 0, 0, 0.1);
-  --accent: #330505;          /* фірмовий бордовий — плашки «важливо» */
+  --accent: #49010c;          /* фірмовий бордовий — плашки «важливо» */
   --soft: #a6bbd6;            /* блакитний з сайту — дрібні акценти */
   --error: #b3261e;
   --error-bg: #fdf3f2;
@@ -233,7 +233,7 @@ a { color: inherit; }
 .intro__lead { grid-area: lead; }
 .intro__side { grid-area: side; }
 
-/* Строгий портрет: ч/б, тісне кадрування на обличчі */
+/* Фото на першому екрані */
 .intro__photo { grid-area: photo; margin: 0; }
 .intro__frame {
   overflow: hidden; border-radius: var(--r-lg); background: var(--surface);
@@ -241,9 +241,7 @@ a { color: inherit; }
 }
 .intro__frame img {
   display: block; width: 100%; height: 100%;
-  object-fit: cover; object-position: 66% 45%;
-  transform: scale(1.4); transform-origin: 66% 48%;
-  filter: grayscale(1) contrast(1.1) brightness(1.02);
+  object-fit: cover; object-position: 50% 60%;   /* кольорове, повний кадр; на квадраті тримаємо обличчя в кадрі */
 }
 .intro__caption {
   display: flex; justify-content: space-between; align-items: baseline; gap: 12px;

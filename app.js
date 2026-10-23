@@ -138,7 +138,8 @@ const OWNER = {
   name: 'Катерина Качур',
   telegram: 'kateriis',
   role: 'Дизайн і розробка сайтів',
-  photo: 'assets/photo.jpg',          // одне фото: на вступі — строге ч/б кадрування, у фіналі — кольорове
+  photo: 'assets/photo.jpg',          // фото на фінальному екрані
+  introPhoto: 'assets/photo-intro.webp', // фото на першому екрані (кольорове, повний кадр)
   replyTime: '1–2 робочих дні',
   // Юридичні документи. Порожнє посилання показується як текст без лінка.
   legal: [
@@ -316,7 +317,7 @@ function renderStatic() {
   const introImg = $('#introImg');
   introImg.addEventListener('error', () => { $('#introPhoto').hidden = true; });
   introImg.alt = `${OWNER.name} — ${OWNER.role.toLowerCase()}`;
-  introImg.src = OWNER.photo;
+  introImg.src = OWNER.introPhoto || OWNER.photo;
   $('#footerName').textContent = OWNER.name;
   $('#footerLegal').innerHTML = OWNER.legal.map(d => `<li>${d.url ? legalLink(d) : `<span>${esc(d.title)}</span>`}</li>`).join('');
   $('#footerContacts').innerHTML = OWNER.contacts.map(c => `<li><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.title)}</a></li>`).join('');
