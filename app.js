@@ -142,11 +142,12 @@ const OWNER = {
   replyTime: '1–2 робочих дні',
   // Юридичні документи. Порожнє посилання показується як текст без лінка.
   legal: [
-    { title: 'Політика конфіденційності', url: '' },
-    { title: 'Згода на обробку персональних даних', url: '' }
+    { title: 'Політика конфіденційності', url: 'privacy.html' },
+    { title: 'Згода на обробку персональних даних', url: 'consent.html' }
   ],
   contacts: [
-    { title: 'Telegram', url: 'https://t.me/kateriis' }
+    { title: 'Telegram', url: 'https://t.me/kateriis' },
+    { title: 'kateriis@gmail.com', url: 'mailto:kateriis@gmail.com' }
   ]
 };
 
