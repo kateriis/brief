@@ -5,7 +5,7 @@
 
 /* Кнопка: підпис + квадрат зі стрілкою */
 .kk-btn { display: inline-flex; gap: 2px; padding: 0; border: 0; background: none; cursor: pointer;
-  font: 500 15px/1 var(--font-tight); letter-spacing: .02em; text-transform: uppercase; color: var(--on-accent); }
+  font: 500 15px/1 var(--font-tight); letter-spacing: -.03em; text-transform: uppercase; color: var(--on-accent); }
 .kk-btn__label, .kk-btn__arrow { background: var(--ink); border-radius: var(--radius-md); min-height: var(--button-h);
   display: flex; align-items: center; justify-content: center; transition: background-color .25s cubic-bezier(.2,.7,.2,1); }
 .kk-btn__label { padding: 0 20px; white-space: nowrap; }
